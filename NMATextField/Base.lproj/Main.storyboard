@@ -1,24 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NMATextField" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aik-9S-dyX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6p-nr-KLw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Wa1-73-v2T">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="igt-xs-dIB">
+                                                        <rect key="frame" x="16" y="24" width="382" height="722"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MEI-tI-BOr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="73.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NMATextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-Yl-WJp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrapper View With UITextField" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjW-Kr-1Uj">
+                                                                        <rect key="frame" x="0.0" y="49.5" width="382" height="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4ZW-od-LgV">
+                                                                <rect key="frame" x="0.0" y="105.5" width="382" height="616.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Examples" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-9S-UgT">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="WUh-xd-q7u">
+                                                                        <rect key="frame" x="0.0" y="36.5" width="382" height="580"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smV-1f-Hue" customClass="NMATextFieldView" customModule="NMATextField" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="gesellschaftsdaten_1430_input_strasse"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderTitle" value="e.g. Password"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Secured Text Entry"/>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMandatory" value="NO"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="cursorColor">
+                                                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="focusColor">
+                                                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="textFieldInteractionEnabled" value="YES"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-Vk-VSI" customClass="NMATextFieldView" customModule="NMATextField" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="74" width="382" height="50"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="gesellschaftsdaten_1430_input_zusatz"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Not Editable Text"/>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMandatory" value="NO"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="cursorColor">
+                                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="focusColor">
+                                                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q95-b9-EGn" customClass="NMATextFieldView" customModule="NMATextField" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="148" width="382" height="128"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="gesellschaftsdaten_1430_input_zusatz"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderTitle" value="Enter at least 1 character"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mandatory Field"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="error" value="At least 1 character is required"/>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMandatory" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="cursorColor">
+                                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="focusColor">
+                                                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNl-KI-GTg" customClass="NMANumericTextFieldView" customModule="NMATextField" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="300" width="382" height="128"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="gesellschaftsdaten_1430_input_ort"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderTitle" value="e.g. 12345"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Numeric TextField"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="cursorColor">
+                                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="focusColor">
+                                                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMandatory" value="NO"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-tr-R3U" customClass="NMATextFieldView" customModule="NMATextField" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="452" width="382" height="128"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="gesellschaftsdaten_1430_input_land"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderTitle" value="Enter 10 characters"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="cursorColor">
+                                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="focusColor">
+                                                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="TextField with character limitation"/>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isMandatory" value="NO"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="16" bottom="40" trailing="16"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Wa1-73-v2T" secondAttribute="trailing" id="1TZ-OU-6kH"/>
+                                            <constraint firstItem="Wa1-73-v2T" firstAttribute="leading" secondItem="v6p-nr-KLw" secondAttribute="leading" id="4Mu-pK-ejb"/>
+                                            <constraint firstItem="Wa1-73-v2T" firstAttribute="top" secondItem="v6p-nr-KLw" secondAttribute="top" id="Bhq-rx-CAK"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wa1-73-v2T" secondAttribute="bottom" id="jIW-Lm-Ccd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Dark 12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetX">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetY">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowSpread">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="v6p-nr-KLw" secondAttribute="bottom" constant="60" id="8CI-x8-Uv0"/>
+                                    <constraint firstItem="v6p-nr-KLw" firstAttribute="width" secondItem="aik-9S-dyX" secondAttribute="width" id="Cnr-jD-HFB"/>
+                                    <constraint firstItem="v6p-nr-KLw" firstAttribute="leading" secondItem="aik-9S-dyX" secondAttribute="leading" id="b8n-jm-m2M"/>
+                                    <constraint firstAttribute="trailing" secondItem="v6p-nr-KLw" secondAttribute="trailing" id="rYu-9K-xk3"/>
+                                    <constraint firstItem="v6p-nr-KLw" firstAttribute="top" secondItem="aik-9S-dyX" secondAttribute="top" id="sYy-sr-XxH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aik-9S-dyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1AG-tR-fEz"/>
+                            <constraint firstItem="aik-9S-dyX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rf3-YG-bM1"/>
+                            <constraint firstAttribute="bottom" secondItem="aik-9S-dyX" secondAttribute="bottom" id="dd6-bO-v25"/>
+                            <constraint firstItem="aik-9S-dyX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ykp-Gl-hz6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="limitedTextField" destination="ZCR-tr-R3U" id="NvT-4H-dlf"/>
+                        <outlet property="mandatoryTextField" destination="q95-b9-EGn" id="ucA-KP-UBM"/>
+                        <outlet property="notEditableTextField" destination="Sgu-Vk-VSI" id="jw5-En-WcS"/>
+                        <outlet property="numberTextField" destination="gNl-KI-GTg" id="TSw-xD-zUl"/>
+                        <outlet property="scrollView" destination="aik-9S-dyX" id="JYc-av-eEw"/>
+                        <outlet property="securedTextField" destination="smV-1f-Hue" id="qVA-QP-vBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Dark 12">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
